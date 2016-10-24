@@ -17,6 +17,9 @@ Route::auth();
 
 Route::get('/project/lists', 'ProjectController@lists');
 Route::get('/project/detail/{id}', 'ProjectController@detail');
+Route::get('/project/add', 'ProjectController@add');
+Route::post('/project/add', 'ProjectController@create');
+Route::delete('/project/delete/{id}', 'ProjectController@delete');
 
 Route::get('/home', 'HomeController@index');
 Route::get('/', function () {
